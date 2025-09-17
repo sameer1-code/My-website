@@ -1,0 +1,455 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vite App</title>
+  </head>
+  <body class="min-h-screen w-full">
+    <header class="bg-black/50 lg:h-10 w-full">
+      <nav class="bg-black/50 text-white p-1">
+        <div class="flex justify-between items-center lg:mx-10">
+          <!-- Logo -->
+          <div>
+            <a href="#" class="text-2xl font-bold">MySite</a>
+          </div>
+
+          <!-- Hamburger -->
+          <button id="menu-btn" class="block lg:hidden p-2 focus:outline-none">
+            <svg class="w-6 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16" />
+            </svg>
+          </button>
+
+          <!-- Desktop Menu -->
+          <ul id="menu" class="hidden lg:flex space-x-6 font-medium">
+            <li><a href="#" class="hover:text-gray-400">Home</a></li>
+            <li><a href="#" class="hover:text-gray-400">About</a></li>
+            <li><a href="#" class="hover:text-gray-400">Projects</a></li>
+            <li><a href="#" class="hover:text-gray-400">Contact</a></li>
+          </ul>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden lg:hidden mt-4">
+          <ul class="flex flex-col space-y-2">
+            <li><a href="#" class="hover:text-gray-400">Home</a></li>
+            <li><a href="#" class="hover:text-gray-400">About</a></li>
+            <li><a href="#" class="hover:text-gray-400">Projects</a></li>
+            <li><a href="#" class="hover:text-gray-400">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <main class="flex justify-center min-h-screen w-full bg-amber-100">
+      <div class="grid grid-cols-12 row-auto w-[80%] h-full bg-[rgba(0,0,0,0.5)]">
+        <!-- hero section -->
+        <section class="col-span-12 row-start-1 row-end-2 2xl:h-[500px] lg:h-[300px] md:h-[200px] h-[200px] bg-transparent flex justify-center items-center flex-col" id="section-1-heading-h1">
+          <h1 class="2xl:text-8xl font-extrabold md:text-4xl text-2xl" id="section-1-heading-1">Welcome to the Future</h1>
+          <h2 class="md;text-xl 2xl:text-4xl italic font-semibold 2xl:mt-5" id="section-1-heading-h2">The era of Advanced Developments</h2>
+        </section>
+        <section class="col-span-12 row-start-2 row-end-4 h-[850px] sm:h-[800px] md:h-[850px] lg:h-[550px] xl:h-[700px] 2xl:h-[500px] w-full bg-transparent">
+          <div class="grid h-full w-full grid-cols-12 grid-rows-auto ">
+            <div class="col-span-12 lg:col-span-6 row-auto bg-gray-400 relative lg:order-2"><img src="./website-hosting-concept-with-bright-light.jpg" alt="cover-image-hosting-1" class="bg-cover no-repeat h-full w-full"><div class="absolute inset-0 bg-black/50">
+              <div class="flex flex-col px-4 ">
+                <h1 class="text-2xl 2xl:text-4xl text-white text-center font-bold md:mt-3 mt-1 md:text-4xl">Technology Stack</h1>
+              <hr class="bg-gray-100 md:mt-3 mt-1 mb-2 shadow-lg shadow-white md:mb-6">
+              <h2 class="text-white text-lg font-semibold 2xl:text-3xl underline md:text-3xl hidden sm:block">Technologies</h2>
+              <ul class="text-white mt-1 md:mt-3 2xl:text-lg text-md md:text-lg xl:text-2xl xl:mt-4 flex gap-4 flex-wrap overflow-x-hidden lg:block">
+                <li class="inline font-semibold"><img src="./html5.png" alt="html5-logo" class="inline"> HTML5</li>
+                <li class="font-semibold"><img src="./css3.png" alt="css3-logo" class="inline"> CSS3</li>
+                <li class="font-semibold"><img src="./bootstrap.png" alt="bootstrap-logo" class="inline"> Bootstrap</li>
+                <li class="font-semibold"><img src="./tailwind-css.png" alt="tailwind-logo" class="inline"> Tailwindcss</li>
+                <li class="font-semibold"><img src="./javascript.png" alt="javascript-logo" class="inline"> Javascript (ES6+)</li>
+              </ul>
+              <h2 class="text-white font-semibold text-lg md:mt-5 mt-2 2xl:text-3xl underline md:text-3xl hidden sm:block">Additionals</h2>
+              <ul class="text-white mt-4 md:mt-3 2xl:text-lg text-md md:text-xl xl:text-2xl xl:mt-4 flex flex-wrap gap-4 lg:block">
+                <li class="font-semibold"><img src="./vite-js.png" alt="vite-logo" class="inline"> Vite</li>
+                <li class="font-semibold"><img src="./figma.png" alt="figma-logo" class="inline"> Figma</li>
+                <li class="font-semibold"><img src="./git.png" alt="git-logo" class="inline"> Git</li>
+                <li class="font-semibold"><img src="./github.png" alt="github-logo" class="inline"> Github</li>
+              </ul>
+              </div>
+            </div></div>
+          <div class="col-span-12 lg:col-span-6 row-auto bg-transparent lg:flex lg:flex-col lg:justify-around px-4 lg:order-1 flex justify-around flex-col p-0">
+            <h1 class="text-white text-center lg:text-4xl font-bold mb-6 shadow-2xl shadow-green-200 p-2 md:text-4xl sm:text-3xl">Stack Overview</h1>
+            <diV class="flex items-center"><progress max="100" value="100" class="w-[70%] sm:h-8 styled-progress h-6"></progress><p class="text-white font-bold inline text-center text-xl ml-2">HTML5</p></diV>
+            <div class="flex items-center sm:mt-4 mt-0"><progress max="100" value="70" class="w-[70%] sm:h-8 styled-progress h-6"></progress><p class="text-white text-xl font-bold ml-2">CSS3</p></div>
+            <div class="flex items-center sm:mt-4 mt-0"><progress max="100" value="80" class="w-[70%] sm:h-8 styled-progress h-6"></progress><p class="text-white text-xl font-bold ml-2">Bootstrap</p></div>
+            <div class="flex items-center sm:mt-4 mt-0"><progress max="100" value="100" class="w-[70%] sm:h-8 styled-progress h-6"></progress><p class="text-white text-xl font-bold ml-2">Tailwindcss</p></div>
+            <div class="flex items-center sm:mt-4 mt-0"><progress max="100" value="60" class="w-[70%] sm:h-8 styled-progress h-6"></progress><p class="text-white text-xl font-bold ml-2">Javascript</p></div>
+            <div class="flex items-center sm:mt-4 mt-0"><progress max="100" value="50" class="w-[70%] sm:h-8 styled-progress h-6"></progress><p class="text-white text-xl font-bold ml-2">vite</p></div>
+            <div class="flex items-center sm:mt-4 mt-0"><progress max="100" value="70" class="w-[70%] sm:h-8 styled-progress h-6"></progress><p class="text-white text-xl font-bold ml-2">Github</p></div>
+            <div class="flex items-center sm:mt-4 mt-0"><progress max="100" value="70" class="w-[70%] sm:h-8 styled-progress h-6"></progress><p class="text-white text-xl font-bold ml-2">Git</p></div>
+          </div>
+          </div>
+        </section>
+        <section class="col-span-12 row-start-4 row-end-6 h-[500px] sm:h-[700px] w-full bg-transparent md:h-[800px] lg:h-[500px] xl:h-[600px] 2xl:h-[600px]">
+          <div class="grid h-full w-full grid-cols-12 grid-rows-auto">
+            <div class="col-span-12 lg:col-span-6 row-auto bg-transparent mt-0">
+              <div class="flex h-full w-full items-center relative">
+                <img src="./web-hosting-image.jpg" alt="web-hosting-image" class="bg-cover bg-no-repeat  w-full h-full shadow-lg shadow-black lg:h-[90%] lg:absolute lg:ml-[-60px]">
+              </div>
+            </div>
+          <div class="col-span-12 lg:col-span-6 row-auto bg-transparent">
+            <div class="flex justify-center items-center p-4 flex-col xl:items-center h-full w-full">
+              <h1 class="text-xl font-bold text-gray-100 sm:text-3xl 2xl:text-5xl xl:text-4xl">Web Hosting</h1>
+              <p class="text-gray-100 text-center mt-4 sm:w-[450px] sm:text-xl lg:w-[300px] 2xl:w-[450px] xl:text-lg">"Web hosting provides the space and resources needed to store and display websites online. It ensures the site is accessible worldwide, offering speed, security, and reliability."</p>
+            </div>
+          </div>
+          </div>
+        </section>
+   <section class="col-span-12 row-start-6 row-end-8 w-full bg-transparent 
+                h-[650px] sm:h-[700px] md:h-[1000px] lg:h-[500px] xl:h-[600px] 2xl:h-[600px]">
+  <div class="grid h-full w-full grid-cols-12">
+
+    <!-- Image (Top on small screens, Right on large screens) -->
+    <div class="col-span-12 lg:col-span-6 lg:col-start-7 lg:col-end-13 
+                flex justify-center items-center order-1 lg:order-2 lg:relative">
+      <div class="h-full w-full shadow-xl shadow-black lg:ml-[80px] lg:absolute">
+        <img src="./4380747.jpg" 
+             alt="web-dev-image" 
+             class="h-full w-full object-cover bg-no-repeat shadow-xl shadow-black">
+      </div>
+    </div>
+    <!-- Text (Bottom on small screens, Left on large screens) -->
+    <div class="col-span-12 lg:col-span-6 lg:col-start-1 lg:col-end-7 
+                flex justify-center items-center order-2 lg:order-1">
+      <div class="flex flex-col justify-center items-center text-center px-4">
+        <h1 class="text-white font-bold text-xl mt-4 2xl:text-5xl xl:text-4xl md:text-3xl">Web Development</h1>
+        <p class="text-gray-100 mt-2 sm:w-[550px] sm:text-md md:text-lg lg:w-[400px] 2xl:mt-6 xl:text-lg xl:mt-6">
+          "Web development is the process of creating and maintaining websites. It involves designing, coding,
+          and optimizing sites to be functional, responsive, and user-friendly. Strong web development brings
+          ideas to life, ensuring a seamless experience for users."
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+        <section class="col-span-12 row-start-8 row-end-10 h-[600px] sm:h-[700px] w-full bg-transparent md:h-[800px] lg:h-[500px] xl:h-[600px] 2xl:h-[600px] lg:mt-6">
+          <div class="grid h-full w-full grid-cols-12 grid-rows-auto">
+            <div class="col-span-12 lg:col-span-6 row-auto bg-transparent relative">
+              <img src="./4804267.jpg" alt="cms-image" class="h-full w-full bg-cover bg-no-repeat shadow-xl shadow-black lg:ml-[-60px] lg:absolute rounded-4xl">
+            </div>
+          <div class="col-span-12 lg:col-span-6 row-auto bg-transparent flex flex-col items-center justify-center">
+            <h1 class="text-white text-xl sm:text-2xl md:text-3xl font-bold text-center xl:text-4xl">Content Management</h1>
+            <p class="text-center text-gray-100 sm:text-md sm:w-[500px] mt-4 p-2 lg:w-[400px] xl:text-lg">"A content Management System (CMS) allows to create, manage, and update websites content without any deep coding knowledge. It proovides user-friendly tools to organize pages , media, and posts efficiently. Popular CMS platforms make website managemnet faster and more flexible."</p>
+          </div>
+          </div>
+        </section>
+        <section class="col-span-12 row-start-10 row-end-12 h-[500px] sm:h-[700px] w-full bg-transparent md:h-[800px] lg:h-[500px] xl:h-[600px] 2xl:h-[600px] lg:mt-8">
+          <div class="grid h-full w-full grid-cols-12 grid-rows-auto">
+            <div class="col-span-12 lg:col-span-6 row-auto bg-transparent h-full w-full lg:order-2 relative">
+              <img src="./istockphoto-2212360504-1024x1024.jpg" alt="web-ui-ux-photo" class="bg-cover h-full w-full bg-no-repeat shadow-xl shadow-black absolute lg:ml-[60px]">
+            </div>
+          <div class="col-span-12 lg:col-span-6 row-auto bg-transparent lg:order-1 flex flex-col items-center justify-center">
+            <h1 class="text-white text-xl text-center font-bold md:text-3xl">Web UI & UX</h1>
+            <p class="text-white text-center mt-4 p-2 md:w-[500px] lg:w-[370px]">Web UI focuses on the visual element of website, like layout, colors, and typography, to create an appealing design. Web UX ensures smooth navigation and usuability for visitors. Together, they delivers a seamless, engaging, and user-friendly web experience.</p>
+          </div>
+          </div>
+        </section>
+        <section class="col-span-12 row-start-12 row-end-14 h-[1000px] lg:h-[800px] md:h-[1800px] bg-transparent w-full">
+          <div class="grid grid-cols-12 grid-rows-12 h-full w-full">
+            <div class="col-span-12 row-start-1 row-end-3 bg-transparent flex items-center justify-center lg:justify-between flex-wrap">
+              <h1 class="text-white lg:text-3xl lg:font-semibold lg:pl-4 text-2xl md:text-4xl">Plans & Pricing</h1>
+              <hr class="block lg:hidden bg-gray-100 w-full ">
+              <div class="flex items-center space-x-4 pr-4 justify-center md:text-3xl lg:text-xl">
+  <!-- Monthly Text -->
+  <span id="monthlyText" class="text-gray-100 font-medium">Static</span>
+
+  <!-- Toggle Switch -->
+  <div class="relative">
+    <input type="checkbox" id="toggle" class="sr-only peer" />
+    <div class="w-12 h-6 bg-gray-100 rounded-full peer-checked:bg-green-500 transition-colors duration-300"></div>
+    <div
+      class="absolute top-0.5 left-0.5 w-5 h-5 bg-white rounded-full transition-all duration-300 peer-checked:translate-x-6">
+    </div>
+  </div>
+
+  <!-- Yearly Text -->
+  <span id="yearlyText" class="text-gray-100 font-medium">Dynamic</span>
+</div>
+            </div>
+            <div class=" col-span-12 row-start-3 row-end-8 lg:col-span-6 lg:row-start-3 lg:row-end-13 bg-black/50 flex flex-col p-8">
+              <h1 class="text-gray-100 lg:text-3xl lg:font-bold text-center shadow-md shadow-blue-300 p-4 md:text-4xl">Static Web</h1>
+              <div class="flex mt-4 lg:mt-10"><span class="text-green-600 lg:text-3xl font-bold md:text-3xl">$</span> <span class="text-3xl lg:text-6xl md:text-5xl font-semibold text-gray-300 pl-2">100</span><sub class="pt-5 lg:pt-6 lg:text-lg pl-2 lg:pl-4 text-gray-400 md:text-xl md:pt-4">/ Full website</sub></div>
+              <hr class="mt-2 mb-8 text-blue-200 border">
+              <div class="flex flex-col">
+                <ul class="flex flex-col gap-1 lg:gap-4 text-sm md:text-xl md:gap-4">
+                  <li class="text-green-500 font-semibold">&check;<span class="text-white font-normal"> Completely Structured</span></li>
+                  <li class="text-green-500 font-semibold">&check;<span class="text-white font-normal"> full Responsive</span></li>
+                  <li class="text-green-500 font-semibold">&check;<span class="text-white"> within 2 days</span></li>
+                  <li class="text-green-500 font-semibold">&check;<span class="text-white font-normal"> Modification upto 7 days</span></li>
+                  <li class="text-green-500 font-semibold">&check;<span class="text-white font-normal"> Netlify + Github Hosting</span></li>
+                  <li class="text-green-500 font-semibold">&check;<span class="text-white font-normal"> Pure Tailwindcss lib</span></li>
+                  <li class="text-green-500 font-semibold">&check;<span class="text-white font-normal"> flexible everywhere</span></li>
+                  <li class="text-green-500 font-semibold">&check;<span class="text-white font-normal"> fully functional</span></li>
+                </ul>
+            </div>
+             <button class=" mb-0 lg:mt-auto h-6 lg:h-10 lg:text-lg text-sm font-semibold text-white focus:opacity-80 hover:shadow-lg hover:shadow-gray-500 cursor-pointer hover:border hover:border-purple-400 rounded-4xl mt-5 md:h-10 md:text-lg md:mb-0 md:mt-auto" id="purchase-button-1"><a href="#">Get started</a></button>
+              </div>
+            <div class=" col-span-12 row-start-8 row-end-13 lg:col-span-6 lg:row-start-3 lg:row-end-13 bg-black/50 flex flex-col p-8">
+              <h1 class="text-gray-100 lg:text-3xl lg:font-bold text-center shadow-md shadow-blue-300 p-4 md:text-3xl">Dynamic Web</h1>
+              <div class="flex mt-4 lg:mt-10"><span class="text-green-600 lg:text-3xl font-bold md:text-3xl">$</span> <span class="text-3xl lg:text-6xl font-semibold text-gray-300 pl-2 md:text-5xl">250</span><sub class="pt-5 lg:pt-6 lg:text-lg pl-2 lg:pl-4 text-gray-400 md:text-xl md:pt-4">/ Full website</sub></div>
+              <hr class="mt-2 mb-8 text-blue-200 border">
+              <div class="flex flex-col">
+                <ul class="flex flex-col gap-1 lg:gap-4 text-sm md:text-xl md:gap-4">
+                  <li class="text-green-500 font-semibold">&check;<span class="text-white font-normal"> Completely Structured</span></li>
+                  <li class="text-green-500 font-semibold">&check;<span class="text-white font-normal"> full Responsive</span></li>
+                  <li class="text-green-500 font-semibold">&check;<span class="text-white"> within 12 days</span></li>
+                  <li class="text-green-500 font-semibold">&check;<span class="text-white font-normal"> Modification upto 30 days</span></li>
+                  <li class="text-green-500 font-semibold">&check;<span class="text-white font-normal"> Netlify + Github + amazon Hosting</span></li>
+                  <li class="text-green-500 font-semibold">&check;<span class="text-white font-normal"> Pure Tailwindcss lib + Typscript</span></li>
+                  <li class="text-green-500 font-semibold">&check;<span class="text-white font-normal"> flexible everywhere</span></li>
+                  <li class="text-green-500 font-semibold">&check;<span class="text-white font-normal"> fully functional and Dynamic</span></li>
+                </ul>
+            </div>
+             <button class=" mb-0 lg:mt-auto mt-5 h-6 lg:h-10 lg:text-lg text-sm font-semibold text-white focus:opacity-80 hover:shadow-lg hover:shadow-gray-500 cursor-pointer hover:border hover:border-purple-400 rounded-4xl md:h-10 md:mb-0 md:mt-auto md:text-lg" id="purchase-button-1"><a href="#">Get started</a></button>
+            </div>
+          </div>
+        </section>
+        <section class="col-span-12 row-start-14 row-end-16 min-h-[500px] bg-transparent">
+  <div class="grid grid-cols-12 auto-rows-auto bg-transparent h-full w-full">
+
+    <!-- Title -->
+    <div class="col-span-12 row-start-1 row-end-2 flex justify-center items-center px-4 py-6">
+      <h1 class="text-lg md:text-2xl lg:text-3xl font-semibold text-gray-200 italic text-center">
+        Supercharge your website with powerful add-ons
+      </h1>
+    </div>
+
+    <!-- Add-On Card Template -->
+    <!-- Collaborators -->
+    <div class="col-span-12 row-start-2 row-end-3 bg-[rgba(255,255,255,0.1)] mx-3 md:mx-8 lg:mx-20 rounded-xl shadow-sm shadow-gray-400">
+      <div class="flex flex-col md:flex-row h-full justify-between px-4 md:px-6 py-4 gap-4">
+        <div class="flex flex-col justify-center">
+          <h1 class="text-lg md:text-xl lg:text-2xl font-semibold text-gray-200">Collaborators</h1>
+          <p class="text-gray-200 text-sm md:text-base lg:text-lg max-w-full md:max-w-[400px]">
+            Invite other business partners to choose specific projections with limited access
+          </p>
+        </div>
+        <div class="flex items-center justify-center md:justify-end">
+          <h1 class="text-2xl font-bold text-green-400 italic">Free</h1>
+        </div>
+      </div>
+    </div>
+
+    <!-- Animations -->
+    <div class="col-span-12 row-start-3 row-end-4 bg-[rgba(255,255,255,0.1)] mx-3 md:mx-8 lg:mx-20 mt-3 rounded-xl shadow-sm shadow-gray-400">
+      <div class="flex flex-col md:flex-row h-full justify-between px-4 md:px-6 py-4 gap-4">
+        <div class="flex flex-col justify-center">
+          <h1 class="text-lg md:text-xl lg:text-2xl font-semibold text-gray-200">Animations</h1>
+          <p class="text-gray-200 text-sm md:text-base lg:text-lg max-w-full md:max-w-[400px]">
+            Add animations to your web pages to make them more interactive and engaging
+          </p>
+        </div>
+        <div class="flex items-center justify-center md:justify-end text-center">
+          <h1 class="text-green-400 font-bold text-lg">
+            $10 <br><span class="italic font-semibold">per page</span>
+          </h1>
+        </div>
+      </div>
+    </div>
+
+    <!-- Custom Graphics & Logo -->
+    <div class="col-span-12 row-start-4 row-end-5 bg-[rgba(255,255,255,0.1)] mx-3 md:mx-8 lg:mx-20 mt-3 rounded-xl shadow-sm shadow-gray-400">
+      <div class="flex flex-col md:flex-row h-full justify-between px-4 md:px-6 py-4 gap-4">
+        <div class="flex flex-col justify-center">
+          <h1 class="text-gray-200 text-lg md:text-xl lg:text-2xl font-semibold">
+            Custom Graphics & Logo
+          </h1>
+          <p class="text-gray-200 text-sm md:text-base lg:text-lg max-w-full md:max-w-[400px]">
+            Add custom graphics as backgrounds or shapes, and logos for branding or signature styling
+          </p>
+        </div>
+        <div class="flex items-center justify-center md:justify-end">
+          <h1 class="text-green-400 text-lg md:text-xl font-bold">$30</h1>
+        </div>
+      </div>
+    </div>
+
+    <!-- Advanced SEO Setup -->
+    <div class="col-span-12 row-start-5 row-end-6 bg-[rgba(255,255,255,0.1)] mx-3 md:mx-8 lg:mx-20 mt-3 rounded-xl shadow-sm shadow-gray-400">
+      <div class="flex flex-col md:flex-row h-full justify-between px-4 md:px-6 py-4 gap-4">
+        <div class="flex flex-col justify-center">
+          <h1 class="text-gray-200 text-lg md:text-xl lg:text-2xl font-semibold">
+            Advanced SEO Setup
+          </h1>
+          <p class="text-gray-200 text-sm md:text-base lg:text-lg max-w-full md:max-w-[400px]">
+            Build your website on advanced SEO structures to gain higher search engine visibility
+          </p>
+        </div>
+        <div class="flex items-center justify-center md:justify-end">
+          <h1 class="text-green-400 text-lg md:text-xl font-bold">$20</h1>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- Testimonials -->
+<section class="col-span-12 h-[1200px] md:h-[1000px] lg:h-[600px] bg-transparent w-full">
+  <div class="grid h-full w-full grid-cols-12 grid-rows-auto">
+    <div class="col-span-12 row-auto bg-transparent flex justify-center items-center flex-col p-4">
+       <div class="text-center mb-12">
+    <h1 class="text-2xl md:text-3xl lg:text-4xl font-bold text-gray-200">
+      What My Clients Say
+    </h1>
+    <p class="text-gray-400 text-sm md:text-lg mt-2 max-w-2xl mx-auto">
+      Real feedback from clients I've worked with — building trust through results and excellence.
+    </p>
+  </div>
+
+  <!-- Testimonials Grid -->
+  <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+    
+    <!-- Testimonial Card 1 -->
+    <div class="bg-[rgba(255,255,255,0.08)] backdrop-blur-sm shadow-lg shadow-gray-800 rounded-xl p-6 flex flex-col transition-transform transform hover:-translate-y-2 hover:shadow-2xl">
+      <div class="flex items-center gap-4 mb-4">
+        <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Client photo" class="w-14 h-14 rounded-full border-2 border-green-400">
+        <div>
+          <h3 class="text-lg font-semibold text-gray-200">Raj Sharma</h3>
+          <p class="text-gray-400 text-sm">E-commerce Owner</p>
+        </div>
+      </div>
+      <p class="text-gray-300 text-sm md:text-base leading-relaxed">
+        "Sameer transformed our online store in just a week. The animations and advanced SEO setup boosted our traffic by 60%. Highly recommended for businesses looking to grow!"
+      </p>
+      <div class="flex mt-4 gap-1 text-green-400">
+        ⭐⭐⭐⭐⭐
+      </div>
+    </div>
+
+    <!-- Testimonial Card 2 -->
+    <div class="bg-[rgba(255,255,255,0.08)] backdrop-blur-sm shadow-lg shadow-gray-800 rounded-xl p-6 flex flex-col transition-transform transform hover:-translate-y-2 hover:shadow-2xl">
+      <div class="flex items-center gap-4 mb-4">
+        <img src="https://randomuser.me/api/portraits/women/45.jpg" alt="Client photo" class="w-14 h-14 rounded-full border-2 border-green-400">
+        <div>
+          <h3 class="text-lg font-semibold text-gray-200">Santoshi Verma</h3>
+          <p class="text-gray-400 text-sm">Startup Founder</p>
+        </div>
+      </div>
+      <p class="text-gray-300 text-sm md:text-base leading-relaxed">
+        "I needed a professional portfolio site to showcase my products. Sameer delivered exactly what I wanted with beautiful UI design and strong backend features. Loved the final result!"
+      </p>
+      <div class="flex mt-4 gap-1 text-green-400">
+        ⭐⭐⭐⭐⭐
+      </div>
+    </div>
+
+    <!-- Testimonial Card 3 -->
+    <div class="bg-[rgba(255,255,255,0.08)] backdrop-blur-sm shadow-lg shadow-gray-800 rounded-xl p-6 flex flex-col transition-transform transform hover:-translate-y-2 hover:shadow-2xl">
+      <div class="flex items-center gap-4 mb-4">
+        <img src="https://randomuser.me/api/portraits/men/74.jpg" alt="Client photo" class="w-14 h-14 rounded-full border-2 border-green-400">
+        <div>
+          <h3 class="text-lg font-semibold text-gray-200">Amit Desai</h3>
+          <p class="text-gray-400 text-sm">Freelancer</p>
+        </div>
+      </div>
+      <p class="text-gray-300 text-sm md:text-base leading-relaxed">
+        "The site performance was top-notch and mobile-friendly. He also guided me through hosting and deployment. Really smooth process from start to finish."
+      </p>
+      <div class="flex mt-4 gap-1 text-green-400">
+        ⭐⭐⭐⭐☆
+      </div>
+    </div>
+
+  </div>
+    </div>
+  </div>
+</section>
+<section class="col-span-12  h-[200px] bg-transparent w-full">
+  <div class="grid grid-cols-12 rows-auto  bg-transparent h-full w-full">
+    <div class="col-span-12 row-start-1 row-end-2 bg-transparent">
+      <h1 class="text-2xl lg:text-5xl font-bold text-center p-4 text-white">Get in Touch</h1>
+      <p class="text-white text-center">Have questions or want to discuss a project? Reach out to me!</p>
+      <form >
+        <div class="flex justify-center items-center mt-4 w-full">
+          <input type="email" placeholder="Your Email..." class="p-2 rounded-l-md italic focus:outline-none bg-gray-50 md:w-[400px]" required>
+          <button type="submit" class="bg-blue-600 text-white p-2 rounded-r-md hover:bg-blue-700 transition-colors duration-300 md:w-[100px]">Subscribe</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</section> 
+      </div>
+    </main>
+<footer class="bg-gray-900 text-gray-300 shadow-2xl shadow-black/50">
+  <div class="max-w-7xl mx-auto px-6 py-10 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+
+    <!-- About Section -->
+    <div class="flex flex-col items-start">
+      <h1 class="font-semibold text-xl text-white">ABOUT</h1>
+      <p class="mt-3 text-gray-400 text-sm leading-relaxed max-w-xs">
+        I’m a passionate frontend developer dedicated to creating seamless,
+        responsive, and visually appealing web experiences.
+        <span class="hidden xl:inline"> My focus is on clean code, performance, and user-centered design.</span>
+      </p>
+    </div>
+
+    <!-- Quick Links -->
+    <div>
+      <h1 class="font-semibold text-xl text-white">QUICK LINKS</h1>
+      <ul class="mt-3 space-y-2">
+        <li><a href="#" class="hover:text-white transition-colors">Home</a></li>
+        <li><a href="#" class="hover:text-white transition-colors">About</a></li>
+        <li><a href="#" class="hover:text-white transition-colors">Projects</a></li>
+        <li><a href="#" class="hover:text-white transition-colors">Contact</a></li>
+      </ul>
+    </div>
+
+    <!-- Contact Info -->
+    <div>
+      <h1 class="font-semibold text-xl text-white">CONTACT</h1>
+      <ul class="mt-3 space-y-2 text-sm">
+        <li>
+          <span class="block text-gray-400">Email:</span>
+          <a href="mailto:Sameerhunger65@gmail.com" class="hover:text-white transition-colors">
+            Sameerhunger65@gmail.com
+          </a>
+        </li>
+        <li>
+          <span class="block text-gray-400">Phone:</span>
+          <a href="tel:+916239058371" class="hover:text-white transition-colors">+91-6239058371</a>
+        </li>
+        <li>
+          <span class="block text-gray-400">Address:</span>
+          <p class="max-w-xs">
+            City Pathankot near Sri Sai Group of College, Dalhousie Road, Bungal, Apartment-62/A, 145001, Punjab (India)
+          </p>
+        </li>
+      </ul>
+    </div>
+
+    <!-- Social Media -->
+    <div class="flex flex-col">
+      <h1 class="font-semibold text-xl text-white">FOLLOW ME</h1>
+      <div class="flex mt-3 space-x-4">
+        <a href="#" class="hover:scale-110 transition-transform">
+          <img src="./github.png" alt="GitHub" class="w-6 h-6">
+        </a>
+        <a href="#" class="hover:scale-110 transition-transform">
+          <img src="./linkedin-square.png" alt="LinkedIn" class="w-6 h-6">
+        </a>
+        <a href="#" class="hover:scale-110 transition-transform">
+          <img src="./whatsapp-square.png" alt="WhatsApp" class="w-6 h-6">
+        </a>
+        <a href="#" class="hover:scale-110 transition-transform">
+          <img src="./twitter.png" alt="Twitter" class="w-6 h-6">
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Bottom Copyright -->
+  <div class="border-t border-gray-700 mt-6">
+    <div class="max-w-7xl mx-auto px-6 py-4 flex flex-col sm:flex-row justify-between items-center text-sm text-gray-400">
+      <p>&copy; 2025 Sameer Mehra. All Rights Reserved.</p>
+      <p class="mt-2 sm:mt-0">Designed & Built with ❤️ by Sameer</p>
+    </div>
+  </div>
+</footer>
+
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>
