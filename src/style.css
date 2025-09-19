@@ -28,7 +28,7 @@ main {
   margin: 0;
   height: auto;
   min-height: 100%;
-  background: linear-gradient(125deg, #6cbbff, #3b005b, #580047) no-repeat;
+  background: linear-gradient(125deg, #38424b, #603676, #000000) no-repeat;
   background-size: 200% 200%, cover;
   animation: gradientFlow 5s ease infinite;
   background-position: center;
@@ -53,7 +53,7 @@ main {
 #section-1-heading-h1 {
   font-family: "Big Shoulders Stencil", sans-serif;
   font-weight: 700;
-  background: linear-gradient(125deg, yellow, rgb(255, 110, 108), rgb(0, 255, 13));
+  background: linear-gradient(125deg, rgb(255, 255, 255), rgb(255, 185, 183), rgb(165, 255, 170));
   -webkit-background-clip: text;
   background-clip: text;
   background-size: 200% 200%;
