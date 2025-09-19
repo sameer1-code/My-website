@@ -1,98 +1,117 @@
-@import "tailwindcss";
+/* ========================
+   Google Fonts (must be at the top)
+   ======================== */
 @import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Stencil:opsz,wght@10..72,100..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Cedarville+Cursive&display=swap');
 
-body,main {
-  margin: 0;
-  height: auto;
-  min-height:100%;
-  background: linear-gradient(125deg, #6cbbff, #3b005b, #580047) no-repeat;
-  background-size: 200% 200%,cover;
-  animation: gradientFlow 5s ease infinite;
-  background-position:center;
+/* ========================
+   Tailwind Core Directives
+   ======================== */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ========================
+   Base Layer
+   ======================== */
+@layer base {
+  body {
+    @apply bg-white text-black;
+  }
 }
 
+/* ========================
+   Custom Styles
+   ======================== */
+body,
+main {
+  margin: 0;
+  height: auto;
+  min-height: 100%;
+  background: linear-gradient(125deg, #6cbbff, #3b005b, #580047) no-repeat;
+  background-size: 200% 200%, cover;
+  animation: gradientFlow 5s ease infinite;
+  background-position: center;
+}
+
+/* Smooth gradient animation */
 @keyframes gradientFlow {
   0% {
     background-position: 0% 50%;
   }
   50% {
-    background-position:100% 50%;
+    background-position: 100% 50%;
   }
   100% {
-    background-position:0% 50%;
+    background-position: 0% 50%;
   }
 }
-#section-1-heading-h1{
-    font-family: "Big Shoulders Stencil", sans-serif;
-    font-weight:700;
-    background:linear-gradient(125deg,yellow,rgb(255, 110, 108),rgb(0, 255, 13));
-    -webkit-background-clip: text;
-    background-clip: text;
-    background-size: 200% 200%;
-    background-position: center;
-    animation: gradientFlow 5s ease infinite;
-    -webkit-text-fill-color:transparent;
-    text-shadow:2px 2px 4px rgba(255,255,255,0.3);
-    box-shadow:2px 2px 8px rgba(255,255,255,0.4);
+
+/* ========================
+   Heading Styles
+   ======================== */
+#section-1-heading-h1 {
+  font-family: "Big Shoulders Stencil", sans-serif;
+  font-weight: 700;
+  background: linear-gradient(125deg, yellow, rgb(255, 110, 108), rgb(0, 255, 13));
+  -webkit-background-clip: text;
+  background-clip: text;
+  background-size: 200% 200%;
+  background-position: center;
+  animation: gradientFlow 5s ease infinite;
+  -webkit-text-fill-color: transparent;
+  text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.3);
+  box-shadow: 2px 2px 8px rgba(255, 255, 255, 0.4);
 }
-@keyframes gradientFlow{
-  0%{
-    background-position:0% 50%;
-  }
-  50%{
-    background-position:100% 50%;
-  }
-  100%{
-    background-position:0% 50%;
-  }
-}
-#section-1-heading-h2{
-    font-family: "Cedarville Cursive", cursive;
+
+#section-1-heading-h2 {
+  font-family: "Cedarville Cursive", cursive;
   font-weight: 400;
   font-style: normal;
 }
-@layer components{
-  .styled-progress::-webkit-progress-bar{
+
+/* ========================
+   Custom Progress Bar
+   ======================== */
+@layer components {
+  .styled-progress::-webkit-progress-bar {
     @apply bg-gray-200 rounded-full;
   }
-  .styled-progress[value="70"]::-webkit-progress-value{
-    @apply bg-blue-500;
-  }
-  .styled-progress[value="50"]::-webkit-progress-value{
-    @apply bg-blue-500;
-  }
-  .styled-progress[value="100"]::-webkit-progress-value{
-    @apply bg-blue-500;
-  }
-  .styled-progress[value="100"]::-webkit-progress-value{
-    @apply bg-blue-500;
-  }
-  .styled-progress[value="60"]::-webkit-progress-value{
-    @apply bg-blue-500;
-  }
-  .styled-progress[value="80"]::-webkit-progress-value{
+
+  .styled-progress[value="50"]::-webkit-progress-value,
+  .styled-progress[value="60"]::-webkit-progress-value,
+  .styled-progress[value="70"]::-webkit-progress-value,
+  .styled-progress[value="80"]::-webkit-progress-value,
+  .styled-progress[value="100"]::-webkit-progress-value {
     @apply bg-blue-500;
   }
 }
-#purchase-button-1{
+
+/* ========================
+   Button Styling
+   ======================== */
+#purchase-button-1 {
   transition: all 0.3s ease-in-out;
   background: linear-gradient(125deg, #6cbbff, #3b005b, #580047) no-repeat;
 }
-#purchase-button-1:hover{
+
+#purchase-button-1:hover {
   transform: scale(1.05);
   background: linear-gradient(125deg, #6cbbff, #3b005b, #580047) no-repeat;
-  background-size: 200% 200%,cover;
+  background-size: 200% 200%, cover;
   animation: gradientFlow 5s ease infinite;
-  background-position:center;
+  background-position: center;
   color: white;
   border: none;
 }
-progress{
+
+/* ========================
+   Progress Reset
+   ======================== */
+progress {
   appearance: none;
   -webkit-appearance: none;
   -moz-appearance: none;
   border: none;
   border-radius: 9999px;
-
 }
